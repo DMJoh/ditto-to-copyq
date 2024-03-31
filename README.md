@@ -16,11 +16,11 @@ Utility to sunc your Ditto clipboard to CopyQ
 1. Clone this repository and `cd` to the directory.
 2. Give appropriate permissions.
       ```shell
-      chmod 750 clips.sh
+      chmod 750 clip.sh
       ```
 4. Modify `directory_path=` to the directory containing imported clips (text files from Step 3 in above section).
 5. Make sure copyq is started and running
 6. Run the script.
      ```
-     ./clips.sh
+     ./clip.sh
      ```
