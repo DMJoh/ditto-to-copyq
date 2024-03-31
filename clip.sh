@@ -16,7 +16,7 @@ read_files_and_append_to_clipboard() {
         if [ -f "$file" ]; then
             # Read the content of the file, removing non-printable characters
             content=$(iconv -c -f UTF-8 -t UTF-8 "$file" | tr -cd '[:print:]')
-            # Append content to CopyQ clipboard
+            # Append content to CopyQ default clipboard.
             copyq tab "&clipboard" add "$content"
             # I was using this on a Opensuse Tumbleweed and installed copyq using flatpak. 
             # If you installed copyq with flatpak, you may need something like this.
